@@ -1,13 +1,48 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  --font-itim: "Itim", cursive;
+  --font-days: "Days One", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+
+  --color-black: #000000;
+  --color-dark-gray: #121212;
+  --color-light-gray: #fafafa;
+  --color-white: #ffffff;
+  --color-title-purple: #480433;
+  --color-pink: #fe506b;
+  --color-light-pink: #ffebee;
+  --color-teal: #012d31;
+}
+
+body {
+  font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-code);
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
 }

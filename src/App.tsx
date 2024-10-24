@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Link } from "react-router-dom";
+import { AppRoutes } from "./routes/AppRoutes";
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container"> {/* Применяем класс container */}
+      <div style={{ display: "flex", gap: "20px" }}>
+        <Link to="/">Home</Link>
+        <Link to="/welcome">Welcome</Link>
+        <Link to="/account">Account</Link>
+      </div>
+      <AppRoutes />
     </div>
   );
-}
+};
 
 export default App;
+

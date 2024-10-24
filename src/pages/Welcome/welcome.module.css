@@ -1,0 +1,75 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  font-family: var(--font-poppins);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 70px 0 48px;
+  font-family: var(--font-itim);
+  font-size: 24px;
+  color: var(--color-pink);
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-title-purple);
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d3c3c;
+  padding-bottom: 32px;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    #d8d8d8 0%,
+    #ee94df 50%,
+    #d8d8d8 100%
+  );
+  border-image-slice: 1;
+  margin: 0 45px;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20px;
+  width: 100%;
+  gap: 24px;
+}
+
+.rule {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-poppins);
+  color: var(--color-dark-gray);
+}
+
+.ruleTitle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 600;
+}
+
+.ruleDescription {
+  padding-left: 25px;
+}
+
+.button {
+  margin: 40px 20px 94px;
+}
