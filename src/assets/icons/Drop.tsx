@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { ISVGProps } from "../../interfaces/ISVGProps";
 
 const Drop = ({ svgAttrs, pathAttrs }: ISVGProps): JSX.Element => {
